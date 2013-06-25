@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 import sys
 import bisect
@@ -30,7 +30,7 @@ def main():
 		best_songs[pos-1] = song
 
 	# sort them and set the bar for quality check
-	best_songs.sort(key=lambda s: s.quality)
+	best_songs.sort()
 	worst = best_songs[-1].quality
 
 	# the rest of the songs will be inserted only if they pass the quality check
